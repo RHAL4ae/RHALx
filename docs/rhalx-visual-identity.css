@@ -14,10 +14,11 @@
   --rhalx-text-dark: #002b36;
   --rhalx-btn-hover: #00acc1;
 }
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
 body {
   background: var(--rhalx-bg-dark);
   color: var(--rhalx-main);
-  font-family: 'Segoe UI', 'Cairo', sans-serif;
+  font-family: 'Cairo', 'Segoe UI', sans-serif;
   margin: 0;
   padding: 2rem;
 }
