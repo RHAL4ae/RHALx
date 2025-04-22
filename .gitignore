@@ -1,0 +1,21 @@
+# Node dependencies
+node_modules/
+dist/
+.env
+*.log
+
+# Python / FastAPI artifacts
+__pycache__/
+*.pyc
+
+# Build artifacts
+*.zip
+*.tar.gz
+*.egg-info/
+
+# VSCode settings
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
