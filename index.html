@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RHALX | رحّال إكس</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #002b36;
+      color: #fff;
+      margin: 0;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3rem;
+      color: #00bcd4;
+    }
+    .lang-switch {
+      margin-top: 1rem;
+    }
+    .lang {
+      max-width: 700px;
+      margin-top: 2rem;
+    }
+    .lang p {
+      font-size: 1.1rem;
+    }
+    .btn {
+      margin-top: 2rem;
+      background: #00bcd4;
+      color: #002b36;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+    .btn:hover {
+      background: #00acc1;
+    }
+  </style>
+</head>
+<body>
+  
+<img src="/logo_rhalx.png" alt="RHALX Logo" style="max-width: 200px; margin-bottom: 1rem;" />
+
+<h1>RHALX | رحّال إكس</h1>
+  <div class="lang-switch">
+    <button onclick="switchLang('ar')" class="btn">عربي</button>
+    <button onclick="switchLang('en')" class="btn">English</button>
+  </div>
+
+  <div id="lang-ar" class="lang" style="display: none;" dir="rtl">
+    <p>منصة رحّال إكس هي منصتك الموحدة لتكامل مزودي الاتصالات وإنترنت الأشياء، مدعومة بالذكاء الاصطناعي، وجاهزة لاستقبال المستقبل من الآن.</p>
+    <a class="btn" href="/alerts">ابدأ الاستخدام</a><br/><a class="btn" href="/investor.html">صفحة المستثمرين</a><br/><a class="btn" href="/about.html">حول المنصة</a><br/><a class="btn" href="/proposals.html">مقترحات الشراكة</a>
+  </div>
+
+  <div id="lang-en" class="lang" style="display: none;" dir="ltr">
+    <p>RHALX is your unified platform for integrating telecom and IoT vendors, powered by AI and built to meet the future—now.</p>
+    <a class="btn" href="/alerts">Get Started</a><br/><a class="btn" href="/investor_en.html">Investor Page</a><br/><a class="btn" href="/about_en.html">About</a><br/><a class="btn" href="/proposals.html">Partner Proposal</a>
+  </div>
+
+  <script>
+    function switchLang(lang) {
+      document.getElementById('lang-ar').style.display = lang === 'ar' ? 'block' : 'none';
+      document.getElementById('lang-en').style.display = lang === 'en' ? 'block' : 'none';
+    }
+    switchLang('ar');
+  </script>
+</body>
+</html>

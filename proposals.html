@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>مقترحات الشركاء | RHALX</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f2f2f2;
+      padding: 2rem;
+      color: #002b36;
+    }
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #00796b;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    label {
+      display: block;
+      margin-top: 1.5rem;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    button {
+      margin-top: 2rem;
+      padding: 0.75rem 2rem;
+      background: #00796b;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #00695c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>نموذج مقترح شراكة</h1>
+    <form action="mailto:info@rhalx.com" method="POST" enctype="text/plain">
+      <label for="name">اسم الشركة / الجهة:</label>
+      <input type="text" id="name" name="اسم الجهة" required>
+
+      <label for="contact">بيانات التواصل:</label>
+      <input type="text" id="contact" name="بيانات التواصل" required>
+
+      <label for="proposal">نص المقترح:</label>
+      <textarea id="proposal" name="نص المقترح" rows="6" required></textarea>
+
+      <button type="submit">إرسال المقترح</button>
+    </form>
+  </div>
+</body>
+</html>
