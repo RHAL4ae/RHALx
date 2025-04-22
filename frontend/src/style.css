@@ -1,17 +1,88 @@
+/*
+  RHALX Visual Identity CSS
+  مستوحى من الشعار المرفق وإرشادات التصميم الإماراتي
+  لوحة الألوان:
+    - خلفية داكنة: #183232
+    - لون رئيسي (شعار/عناوين): #F3F2E9
+    - لون ثانوي للأزرار/الروابط: #00bcd4
+    - لون نص داكن: #002b36
+*/
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --rhalx-bg-dark: #183232;
+  --rhalx-main: #F3F2E9;
+  --rhalx-accent: #00bcd4;
+  --rhalx-text-dark: #002b36;
+  --rhalx-btn-hover: #00acc1;
 }
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+body {
+  background: var(--rhalx-bg-dark);
+  color: var(--rhalx-main);
+  font-family: 'Cairo', 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 2rem;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: var(--rhalx-main);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.button, .btn {
+  background: var(--rhalx-accent);
+  color: var(--rhalx-bg-dark);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+  text-decoration: none;
+  font-weight: 600;
+}
+.button:hover, .btn:hover {
+  background: var(--rhalx-btn-hover);
+}
+.container, .main-content {
+  background: #1e3a3a;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 900px;
+}
+input, textarea, select {
+  background: #f3f2e9;
+  color: var(--rhalx-text-dark);
+  border: 1px solid #b0b0b0;
+  border-radius: 6px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+label {
+  color: var(--rhalx-main);
+  font-weight: 600;
+}
+a {
+  color: var(--rhalx-accent);
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+a:hover {
+  color: var(--rhalx-btn-hover);
+}
+/* دعم RTL */
+[dir="rtl"] body, [dir="rtl"] .container {
+  text-align: right;
+  direction: rtl;
+}
+/* ملاحظات:
+- يمكن تخصيص المزيد من الأنماط حسب الحاجة.
+- الألوان مستخرجة من الشعار المرفق مع مراعاة التباين والوضوح.
+*/
 
 a {
   font-weight: 500;
