@@ -1,0 +1,17 @@
+body {
+    font-family: 'Cairo', Arial, sans-serif;
+    background: #f7f7fa;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+h1 {
+    color: #1a73e8;
+    text-align: center;
+    margin-top: 40px;
+}
+p {
+    text-align: center;
+    font-size: 1.2em;
+}
